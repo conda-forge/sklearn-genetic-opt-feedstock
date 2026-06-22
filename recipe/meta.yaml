@@ -1,5 +1,6 @@
 {% set name = "sklearn-genetic-opt" %}
 {% set version = "0.13.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.12
+    - python {{ python_min }}
     - pip
     - setuptools >=77
     - wheel
   run:
-    - python >=3.12
+    - python >={{ python_min }}
     - scikit-learn >=1.5.0
     - numpy >=1.26.0
     - deap >=1.4.0
@@ -35,6 +36,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
