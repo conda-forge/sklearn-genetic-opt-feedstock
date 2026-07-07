@@ -26,8 +26,9 @@ requirements:
     - scikit-learn >=1.5.0
     - numpy >=1.26.0
     - deap >=1.4.0
+    - scipy
     - tqdm >=4.60.0
-    - pandas
+    - pandas >=1.3.0
 
 test:
   imports:
@@ -45,7 +46,7 @@ about:
   summary: Scikit-learn models hyperparameter tuning and feature selection using evolutionary algorithms
   license: MIT
   license_file: LICENSE
-  doc_url: https://rodrigo-arenas.github.io/Sklearn-genetic-opt/
+  doc_url: https://sklearngeneticopt.rodrigo-arenas.com/
   dev_url: https://github.com/rodrigo-arenas/Sklearn-genetic-opt
 
 extra:
