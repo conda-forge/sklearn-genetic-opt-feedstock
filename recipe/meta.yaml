@@ -1,5 +1,5 @@
 {% set name = "sklearn-genetic-opt" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b175d3d4d4fce2ad22564a3b215bf4ca08bfcccfbc2f73467b7cc4fd7c11c894
+  sha256: 2d2a8e5a401cf6e7507b6f42316510ba842f2e551a52f55ceda6f29b810625fb
 
 build:
   noarch: python
@@ -26,8 +26,9 @@ requirements:
     - scikit-learn >=1.5.0
     - numpy >=1.26.0
     - deap >=1.4.0
+    - scipy
     - tqdm >=4.60.0
-    - pandas
+    - pandas >=1.3.0
 
 test:
   imports:
@@ -45,7 +46,7 @@ about:
   summary: Scikit-learn models hyperparameter tuning and feature selection using evolutionary algorithms
   license: MIT
   license_file: LICENSE
-  doc_url: https://rodrigo-arenas.github.io/Sklearn-genetic-opt/
+  doc_url: https://sklearngeneticopt.rodrigo-arenas.com/
   dev_url: https://github.com/rodrigo-arenas/Sklearn-genetic-opt
 
 extra:
