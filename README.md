@@ -11,7 +11,7 @@ Summary: Scikit-learn models hyperparameter tuning and feature selection using e
 
 Development: https://github.com/rodrigo-arenas/Sklearn-genetic-opt
 
-Documentation: https://rodrigo-arenas.github.io/Sklearn-genetic-opt/
+Documentation: https://sklearngeneticopt.rodrigo-arenas.com/
 
 Current build status
 ====================
@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sklearn-genetic-opt` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sklearn-genetic-opt
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sklearn-genetic-opt
 ```
 
-It is possible to list all of the versions of `sklearn-genetic-opt` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sklearn-genetic-opt
+# for installing globally
+pixi global install sklearn-genetic-opt
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sklearn-genetic-opt` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sklearn-genetic-opt --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sklearn-genetic-opt --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sklearn-genetic-opt --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds sklearn-genetic-opt --channel conda-forge
 # List dependencies of `sklearn-genetic-opt`:
 mamba repoquery depends sklearn-genetic-opt --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge

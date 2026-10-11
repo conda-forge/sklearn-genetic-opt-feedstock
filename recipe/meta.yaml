@@ -1,5 +1,5 @@
 {% set name = "sklearn-genetic-opt" %}
-{% set version = "0.13.3" %}
+{% set version = "0.14.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2d2a8e5a401cf6e7507b6f42316510ba842f2e551a52f55ceda6f29b810625fb
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: cd0ac5648e0b0b0ea883752d8fbd17469459762e48d0db6fd154d879b013ba23
 
 build:
   noarch: python
